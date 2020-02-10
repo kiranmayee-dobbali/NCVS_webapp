@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Flash Card</h1>
+    Question : {{card.question}} <br>
+    Answer: {{card.answer}}
+
+    <p>
+        <button>
+            <a href="{{url_for('card_view', index= index+1) }}"></a>
+            Next card
+        </button>
+    </p>
+</body>
+</html>
